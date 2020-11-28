@@ -4,7 +4,7 @@
             <h1>GLOBO-BURGER</h1>
 			<img src="/assets/img/burger.png">
 		</div>
-		<div class="col-md-6" class="burgers">
+		<div class="col-md-6" id="burgers">
 			<div class="row">
 			    {{#each burger_data}}
 			  	{{#unless this.devoured}}
@@ -33,10 +33,10 @@
     <br>
     <br>
 	<div class="row">
-		<div class="col-md-12" id="newBurger">
+		<div class="col-md-12" id="newBurgers">
             <p>To create a new, personalized burger, enter its name below!</p>
 			<form action="/burgers/create" method="POST">
-				<input id="newBurger" placeholder="Add your burger here!">
+				<input id="newBurger" name="burger_name" placeholder="Add your burger here!">
 				<button type="submit" class="btn btn-primary" id="newBurgerBtn">Submit</button>
 			</form>
 		</div>
