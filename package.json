@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/chrissy613/Node-Express-Handlebars/issues"
   },
-  "homepage": "https://github.com/chrissy613/Node-Express-Handlebars#readme"
+  "homepage": "https://github.com/chrissy613/Node-Express-Handlebars#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "mysql": "^2.18.1"
+  }
 }
