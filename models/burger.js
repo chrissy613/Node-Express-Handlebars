@@ -7,17 +7,11 @@ const burger = {
     });
   },
   create: function(name, cb) {
-    orm.create("burgers", [
-      "burger_name", "devoured"
-    ], [
-      name, false
-    ], cb);
+    orm.create("burgers", ["burger_name", "devoured"], [name, false], cb);
   },
   update: function(id, cb) {
     let condition = "id=" + id;
-    orm.update("burgers", {
-      devoured: true
-    }, condition, cb);
+    orm.update("burgers", {devoured: true}, condition, cb);
   }
 };
 
